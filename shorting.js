@@ -1,4 +1,4 @@
-// let prompt = require("prompt-sync")();
+let prompt = require("prompt-sync")();
 // let size = Number(prompt("Enter the size of array : "));
 // if(size <= 1) console.log("array size must be more than 2.")
 //     else{
@@ -25,20 +25,20 @@
 
 
 // Insertion Sort 
-// for (let i = 0; i < arr2.length; i++){
-//         let samllest = i;
-//         for(let j = i+1; j< arr2.length; j++){
-//                 if(arr2[samllest] > arr2[j]){
-//                         samllest = j;
-//                     }
-//                 }
-//                 if ( i != samllest ){
-//                         let temp = arr2[i];
-//                         arr2[i] = arr2[samllest];
-//                         arr2[samllest] = temp;
-//                     }
-//                 }
-// console.log("Insertion Sort ", arr2)
+for (let i = 0; i < arr2.length; i++){
+        let samllest = i;
+        for(let j = i+1; j< arr2.length; j++){
+                if(arr2[samllest] > arr2[j]){
+                        samllest = j;
+                    }
+                }
+                if ( i != samllest ){
+                        let temp = arr2[i];
+                        arr2[i] = arr2[samllest];
+                        arr2[samllest] = temp;
+                    }
+                }
+console.log("Insertion Sort ", arr2)
 
 // // Selection Sort
 // for(let i = 1; i < arr3.length; i++){
